@@ -1,22 +1,23 @@
 name: appkhonsong
 description: แอพขนส่ง - Mobile shell for the v19 transport management system.
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
-  sdk: '>=3.4.0 <4.0.0'
+  sdk: '>=3.8.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  flutter_inappwebview: ^6.1.5
+  # 6.2.0-beta.3 includes Android Gradle Plugin 9 compatibility fixes.
+  flutter_inappwebview: 6.2.0-beta.3
   shared_preferences: ^2.3.5
   url_launcher: ^6.3.1
   permission_handler: ^11.3.1
   path_provider: ^2.1.5
   dio: ^5.7.0
-  open_filex: ^4.6.0
+  open_filex: 4.7.0
 
 dev_dependencies:
   flutter_test:
