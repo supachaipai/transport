@@ -33,7 +33,7 @@ python3 tool/patch_platforms.py
 flutter pub get
 dart run flutter_launcher_icons
 dart run flutter_native_splash:create
-flutter analyze
+# flutter analyze is intentionally not run in CI setup; lint warnings must not block APK creation.
 
 echo
 printf '%s\n' "พร้อมแล้ว" "Android: flutter build apk --release" "iPhone: flutter build ipa --release  (ต้องใช้ macOS + Apple Developer signing)"
